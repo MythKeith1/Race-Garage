@@ -1,0 +1,904 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover exceptional luxury and performance vehicles at AUTOVAULT. Explore our curated collection and arrange your private vehicle viewing.">
+
+    <meta name="theme-color" content="#090909">
+
+    <title>AUTOVAULT | Premium Automotive Collection</title>
+
+    <!-- TYPOGRAPHY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==========================================
+         01. SITE HEADER
+    =========================================== -->
+
+    <header class="site-header" id="siteHeader">
+
+        <div class="header-container">
+
+            <a href="index.html" class="brand-logo" aria-label="AUTOVAULT homepage">
+                AUTO<span>VAULT</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="navigationLinks">
+
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+
+            </button>
+
+            <nav class="main-navigation" id="mainNavigation"
+                aria-label="Main navigation">
+
+                <ul class="navigation-links" id="navigationLinks">
+
+                    <li>
+                        <a href="index.html" class="navigation-link active"
+                            aria-current="page">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="collection.html" class="navigation-link">
+                            Collection
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#why-autovault" class="navigation-link">
+                            Our Difference
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#buying-process" class="navigation-link">
+                            Buying Process
+                        </a>
+                    </li>
+
+                </ul>
+
+                <a href="enquiry.html?intent=consultation"
+                    class="header-cta">
+                    Arrange A Viewing
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==========================================
+             02. HERO SECTION
+             Goal: Capture attention and generate clicks
+        =========================================== -->
+
+        <section class="hero-section" id="hero">
+
+            <div class="hero-image-wrapper">
+
+                <img
+                    class="hero-image"
+                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2200&q=90"
+                    alt="Porsche sports car photographed in a premium automotive setting"
+                    fetchpriority="high">
+
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <span class="section-eyebrow">
+                        THE AUTOVAULT COLLECTION
+                    </span>
+
+                    <h1 class="hero-title">
+                        Driven By Excellence.
+                        <span>Defined By You.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover an exceptional collection of luxury
+                        and performance vehicles. Find the machine
+                        that reflects your ambition, individuality
+                        and passion for driving.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="collection.html"
+                            class="button button-primary">
+                            Explore Collection
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="enquiry.html?intent=consultation"
+                            class="button button-outline">
+                            Arrange A Private Viewing
+                        </a>
+
+                    </div>
+
+                    <div class="hero-assurance">
+
+                        <span class="assurance-indicator"></span>
+
+                        <span>
+                            A MORE PERSONAL WAY TO DISCOVER YOUR NEXT VEHICLE
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+
+                <span class="hero-scroll-label">
+                    SCROLL TO DISCOVER
+                </span>
+
+                <span class="hero-counter">
+                    01 <span>/</span> 03
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             03. VALUE PROPOSITION BAR
+             Goal: Establish immediate confidence
+        =========================================== -->
+
+        <section class="value-strip" id="valueProposition">
+
+            <div class="value-strip-container">
+
+                <div class="value-item">
+                    <span class="value-icon">01</span>
+                    <div>
+                        <h2>Curated Vehicles</h2>
+                        <p>Distinctive automotive selection</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <span class="value-icon">02</span>
+                    <div>
+                        <h2>Personal Assistance</h2>
+                        <p>Guidance throughout your journey</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <span class="value-icon">03</span>
+                    <div>
+                        <h2>Private Viewings</h2>
+                        <p>Explore your preferred vehicle</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <span class="value-icon">04</span>
+                    <div>
+                        <h2>Direct Enquiries</h2>
+                        <p>Connect with our automotive team</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             04. FEATURED COLLECTION
+             Goal: Turn interest into vehicle discovery
+        =========================================== -->
+
+        <section class="featured-section" id="featuredVehicles">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <div class="section-heading-content">
+
+                        <span class="section-eyebrow">
+                            SELECTED FOR EXCELLENCE
+                        </span>
+
+                        <h2 class="section-title">
+                            Discover The <span>Collection.</span>
+                        </h2>
+
+                        <p class="section-description">
+                            Explore a selection of vehicles where
+                            performance, engineering and design
+                            come together.
+                        </p>
+
+                    </div>
+
+                    <a href="collection.html" class="text-link">
+                        View All Vehicles →
+                    </a>
+
+                </div>
+
+
+                <div class="featured-grid" id="featuredGrid">
+
+                    <!-- VEHICLE 01 -->
+
+                    <article class="vehicle-card"
+                        data-vehicle="porsche-911-carrera">
+
+                        <a href="enquiry.html?vehicle=porsche-911-carrera"
+                            class="vehicle-image-link"
+                            aria-label="Enquire about Porsche 911 Carrera">
+
+                            <div class="vehicle-image-wrapper">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Porsche 911 Carrera"
+                                    loading="lazy">
+
+                                <span class="vehicle-badge">
+                                    FEATURED
+                                </span>
+
+                            </div>
+
+                        </a>
+
+                        <div class="vehicle-details">
+
+                            <span class="vehicle-category">
+                                SPORTS CAR
+                            </span>
+
+                            <h3 class="vehicle-name">
+                                Porsche 911 Carrera
+                            </h3>
+
+                            <div class="vehicle-specifications">
+                                <span>2024</span>
+                                <span>Automatic</span>
+                                <span>Petrol</span>
+                            </div>
+
+                            <div class="vehicle-price-row">
+
+                                <div>
+                                    <span class="price-label">
+                                        INDICATIVE PRICE
+                                    </span>
+
+                                    <p class="vehicle-price">
+                                        R 2,450,000
+                                    </p>
+                                </div>
+
+                                <a href="enquiry.html?vehicle=porsche-911-carrera"
+                                    class="vehicle-enquiry-link">
+                                    Enquire →
+                                </a>
+
+                            </div>
+
+                            <a href="enquiry.html?vehicle=porsche-911-carrera&intent=viewing"
+                                class="vehicle-viewing-link">
+                                Request A Viewing
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VEHICLE 02 -->
+
+                    <article class="vehicle-card"
+                        data-vehicle="mercedes-amg-gt">
+
+                        <a href="enquiry.html?vehicle=mercedes-amg-gt"
+                            class="vehicle-image-link"
+                            aria-label="Enquire about Mercedes-AMG GT">
+
+                            <div class="vehicle-image-wrapper">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Mercedes performance vehicle"
+                                    loading="lazy">
+
+                            </div>
+
+                        </a>
+
+                        <div class="vehicle-details">
+
+                            <span class="vehicle-category">
+                                PERFORMANCE
+                            </span>
+
+                            <h3 class="vehicle-name">
+                                Mercedes-AMG GT
+                            </h3>
+
+                            <div class="vehicle-specifications">
+                                <span>2024</span>
+                                <span>Automatic</span>
+                                <span>Petrol</span>
+                            </div>
+
+                            <div class="vehicle-price-row">
+
+                                <div>
+                                    <span class="price-label">
+                                        INDICATIVE PRICE
+                                    </span>
+
+                                    <p class="vehicle-price">
+                                        R 3,250,000
+                                    </p>
+                                </div>
+
+                                <a href="enquiry.html?vehicle=mercedes-amg-gt"
+                                    class="vehicle-enquiry-link">
+                                    Enquire →
+                                </a>
+
+                            </div>
+
+                            <a href="enquiry.html?vehicle=mercedes-amg-gt&intent=viewing"
+                                class="vehicle-viewing-link">
+                                Request A Viewing
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VEHICLE 03 -->
+
+                    <article class="vehicle-card"
+                        data-vehicle="bmw-m5-competition">
+
+                        <a href="enquiry.html?vehicle=bmw-m5-competition"
+                            class="vehicle-image-link"
+                            aria-label="Enquire about BMW M5 Competition">
+
+                            <div class="vehicle-image-wrapper">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=85"
+                                    alt="BMW premium performance vehicle"
+                                    loading="lazy">
+
+                            </div>
+
+                        </a>
+
+                        <div class="vehicle-details">
+
+                            <span class="vehicle-category">
+                                LUXURY PERFORMANCE
+                            </span>
+
+                            <h3 class="vehicle-name">
+                                BMW M5 Competition
+                            </h3>
+
+                            <div class="vehicle-specifications">
+                                <span>2023</span>
+                                <span>Automatic</span>
+                                <span>Petrol</span>
+                            </div>
+
+                            <div class="vehicle-price-row">
+
+                                <div>
+                                    <span class="price-label">
+                                        INDICATIVE PRICE
+                                    </span>
+
+                                    <p class="vehicle-price">
+                                        R 2,150,000
+                                    </p>
+                                </div>
+
+                                <a href="enquiry.html?vehicle=bmw-m5-competition"
+                                    class="vehicle-enquiry-link">
+                                    Enquire →
+                                </a>
+
+                            </div>
+
+                            <a href="enquiry.html?vehicle=bmw-m5-competition&intent=viewing"
+                                class="vehicle-viewing-link">
+                                Request A Viewing
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="collection-bottom-cta">
+
+                    <p>
+                        Looking for something different?
+                    </p>
+
+                    <a href="collection.html" class="button button-secondary">
+                        Explore The Full Inventory →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             05. EDITORIAL BRAND SECTION
+             Goal: Create emotional connection
+        =========================================== -->
+
+        <section class="editorial-section" id="brandExperience">
+
+            <div class="editorial-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=85"
+                    alt="Premium automotive design and craftsmanship"
+                    loading="lazy">
+
+            </div>
+
+            <div class="editorial-overlay"></div>
+
+            <div class="editorial-content">
+
+                <span class="section-eyebrow">
+                    THE ART OF THE DRIVE
+                </span>
+
+                <h2>
+                    Not Just A Vehicle.
+                    <span>A Reflection Of You.</span>
+                </h2>
+
+                <p>
+                    Every remarkable vehicle tells a story.
+                    At AUTOVAULT, we make discovering your next
+                    chapter a more considered experience.
+                </p>
+
+                <a href="collection.html" class="text-link">
+                    Discover The AUTOVAULT Experience →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             06. WHY CHOOSE AUTOVAULT
+             Goal: Reduce buyer hesitation
+        =========================================== -->
+
+        <section class="benefits-section" id="why-autovault">
+
+            <div class="section-container">
+
+                <div class="section-heading centered-heading">
+
+                    <span class="section-eyebrow">
+                        THE AUTOVAULT DIFFERENCE
+                    </span>
+
+                    <h2 class="section-title">
+                        A Better Way To <span>Find Your Drive.</span>
+                    </h2>
+
+                    <p class="section-description">
+                        Discover an automotive experience built
+                        around your preferences, priorities
+                        and expectations.
+                    </p>
+
+                </div>
+
+
+                <div class="benefits-grid">
+
+                    <article class="benefit-card">
+
+                        <span class="benefit-number">01</span>
+
+                        <h3>Considered Selection</h3>
+
+                        <p>
+                            Explore a curated range of distinctive
+                            luxury and performance vehicles.
+                        </p>
+
+                    </article>
+
+
+                    <article class="benefit-card">
+
+                        <span class="benefit-number">02</span>
+
+                        <h3>Personal Guidance</h3>
+
+                        <p>
+                            Receive assistance in identifying
+                            vehicles that match your preferences.
+                        </p>
+
+                    </article>
+
+
+                    <article class="benefit-card">
+
+                        <span class="benefit-number">03</span>
+
+                        <h3>Transparent Discussions</h3>
+
+                        <p>
+                            Ask questions about pricing,
+                            specifications and vehicle availability.
+                        </p>
+
+                    </article>
+
+
+                    <article class="benefit-card">
+
+                        <span class="benefit-number">04</span>
+
+                        <h3>Convenient Viewings</h3>
+
+                        <p>
+                            Request a viewing and discuss
+                            the next steps with our team.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             07. BUYING PROCESS
+             Goal: Make the next step easy
+        =========================================== -->
+
+        <section class="process-section" id="buying-process">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <div class="section-heading-content">
+
+                        <span class="section-eyebrow">
+                            YOUR JOURNEY STARTS HERE
+                        </span>
+
+                        <h2 class="section-title">
+                            From Discovery <span>To Drive.</span>
+                        </h2>
+
+                        <p class="section-description">
+                            Finding your next vehicle should feel
+                            as exceptional as driving it.
+                        </p>
+
+                    </div>
+
+                    <a href="collection.html" class="text-link">
+                        Browse Vehicles →
+                    </a>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <article class="process-step">
+
+                        <span class="process-number">01</span>
+
+                        <h3>Discover</h3>
+
+                        <p>
+                            Explore the collection and identify
+                            the vehicle that interests you.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-step">
+
+                        <span class="process-number">02</span>
+
+                        <h3>Connect</h3>
+
+                        <p>
+                            Submit an enquiry and tell us
+                            what you would like to know.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-step">
+
+                        <span class="process-number">03</span>
+
+                        <h3>Arrange A Viewing</h3>
+
+                        <p>
+                            Request a suitable viewing time
+                            and discuss your preferred vehicle.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-step">
+
+                        <span class="process-number">04</span>
+
+                        <h3>Move Forward</h3>
+
+                        <p>
+                            Discuss pricing, availability
+                            and the next steps towards purchase.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             08. PRIVATE VIEWING CTA
+             Goal: Convert interested visitors
+        =========================================== -->
+
+        <section class="viewing-section" id="privateViewing">
+
+            <div class="viewing-content">
+
+                <span class="section-eyebrow">
+                    YOUR NEXT VEHICLE DESERVES A CLOSER LOOK
+                </span>
+
+                <h2>
+                    Experience It
+                    <span>For Yourself.</span>
+                </h2>
+
+                <p>
+                    Found something that caught your attention?
+                    Request a private viewing or speak with our
+                    team about your preferred vehicle.
+                </p>
+
+                <div class="viewing-actions">
+
+                    <a href="enquiry.html?intent=viewing"
+                        class="button button-primary">
+                        Request A Viewing →
+                    </a>
+
+                    <a href="enquiry.html?intent=consultation"
+                        class="button button-outline">
+                        Speak With Our Team
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             09. FINAL CONVERSION SECTION
+             Goal: Capture remaining purchase intent
+        =========================================== -->
+
+        <section class="final-cta-section" id="finalConversion">
+
+            <div class="final-cta-content">
+
+                <span class="section-eyebrow">
+                    THE NEXT MOVE IS YOURS
+                </span>
+
+                <h2>
+                    Find The Vehicle
+                    <span>That Moves You.</span>
+                </h2>
+
+                <p>
+                    Your next exceptional driving experience
+                    begins with one conversation.
+                </p>
+
+                <div class="final-cta-actions">
+
+                    <a href="collection.html"
+                        class="button button-primary">
+                        Explore Vehicles
+                    </a>
+
+                    <a href="enquiry.html?intent=consultation"
+                        class="button button-outline">
+                        Start Your Enquiry
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         10. SITE FOOTER
+    =========================================== -->
+
+    <footer class="site-footer" id="siteFooter">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand-logo">
+                    AUTO<span>VAULT</span>
+                </a>
+
+                <p class="footer-tagline">
+                    Driven By Excellence. Defined By You.
+                </p>
+
+                <p class="footer-description">
+                    A premium destination for automotive
+                    discovery and personalised vehicle enquiries.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h2>Explore</h2>
+
+                <a href="index.html">Home</a>
+
+                <a href="collection.html">Vehicle Collection</a>
+
+                <a href="#why-autovault">Our Difference</a>
+
+                <a href="#buying-process">Buying Process</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h2>Get Started</h2>
+
+                <a href="enquiry.html?intent=consultation">
+                    General Enquiry
+                </a>
+
+                <a href="enquiry.html?intent=viewing">
+                    Request A Viewing
+                </a>
+
+                <a href="collection.html">
+                    Discover Vehicles
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h2>Contact</h2>
+
+                <p>
+                    Speak with our team about your preferred vehicle.
+                </p>
+
+                <a href="enquiry.html" class="footer-contact-link">
+                    Make An Enquiry →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear">2026</span>
+                AUTOVAULT. ALL RIGHTS RESERVED.
+            </p>
+
+            <p>
+                DRIVEN BY EXCELLENCE. DEFINED BY YOU.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
+```
